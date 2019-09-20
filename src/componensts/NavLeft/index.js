@@ -17,21 +17,21 @@ export default class NavLeft extends React.Component {
         return data.map((item) => {
             if (item.children) {
                 return (
-                    <SubMenu title={item.title} key={item.key}>
+                    <SubMenu  style={{margin:15}} title={item.title} key={item.key}>
                         {this.renderMenu(item.children)}
                     </SubMenu>
                 )
             }
-            return <Menu.Item title={item.title} key={item.key}>{item.title}</Menu.Item>
+            return <Menu.Item style={{margin:15}} title={item.title} key={item.key}>{item.title}</Menu.Item>
 
         })
     }
     render() {
         return (
-            <div>
+            <div className='nav-left'>
                 <div className='logo'>
-
-                    <h1>Shared MS </h1>
+                  <img src={require('../../public/assets/logo-ant.svg')}  alt=''></img>
+                    <h1>SHARED MS </h1>
                 </div>
                 <Menu theme='dark' mode="vertical">
                     {this.state.menuTree}
