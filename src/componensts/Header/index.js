@@ -37,14 +37,14 @@ export default class Header extends React.Component {
         return (
             <div>
                 <Row className='header-top'>
-                    <Col span='24'>
+                    <Col span={24}>
                         <span>欢迎，{this.state.userName} </span>
                         <a href=''>退出</a>
                     </Col>
                 </Row>
                 <Row className='breadcrumb' >
-                    <Col span='4' className='breadcrumb-title'>首页</Col>
-                    <Col span='20' className='breadcrumb-weather'>
+                    <Col span={4} className='breadcrumb-title'>首页</Col>
+                    <Col span={20} className='breadcrumb-weather'>
                         <span className='date'>{this.state.sysTime}</span>
                         <span className='weather'>{this.state.fengxiang}  {this.state.type}</span>
                     </Col>

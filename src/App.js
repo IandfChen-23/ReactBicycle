@@ -1,10 +1,13 @@
-import React from 'react';
+import React from 'react'
 import './App.less';
-import Admin from './Admin'
-function App() {
-  return (
-    <Admin/>
-  );
-}
 
-export default App;
+class App extends React.Component{
+  render() {
+    return(
+      <div>
+        {this.props.children}
+      </div>
+    )
+  }
+}
+export default App
