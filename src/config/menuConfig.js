@@ -6,11 +6,11 @@ const menuList = [{
         key: '/ui',
         children: [{
                 title: '按钮',
-                key: 'ui/button',
+                key: '/admin/ui/button',
             },
             {
                 title: '弹框',
-                key: '/ui/modals',
+                key: '/admin/ui/modal',
             },
             {
                 title: 'Loading',
